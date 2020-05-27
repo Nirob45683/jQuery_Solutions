@@ -1,0 +1,42 @@
+
+<script type="text/javascript">
+  
+  $(document).ready(function(){
+
+    var newRow = '<div class="row form-group clearfix">'+
+
+                      '<div class="col-md-6">'+
+                        '<select class="form-control select2" name="medicine_name[]" type="text">'+
+                          '<option>Napa</option>'+
+                          '<option>Napa</option>'+
+                          '<option>Napa</option>'+
+                          '<option>paracetamol</option>'+
+                        '</select>'+
+                      '</div>'+
+
+                      '<div class="col-md-2">'+
+                        '<input class="form-control required" name="medicine_quantity[]" type="text">'+
+                      '</div>'+
+
+                      '<div class="col-md-1">'+
+                        '<input class="form-control" value="× 1.8" disabled>'+
+                      '</div>'+
+
+                      '<div class="col-md-2">'+
+                        '<input class="form-control" value="3.6" disabled>'+
+                      '</div>'+
+
+                      '<div class="col-md-1">'+
+                        '<a class="btn btn-danger col-sm-12"><b>x</b></a>'+
+                      '</div>'+
+
+                  '</div>';
+
+    $("#addRow").click(function(){
+      $(".sectionBody").append(newRow);
+      $('.select2').select2();
+    });
+
+  });
+
+</script>
